@@ -1,0 +1,60 @@
+{% extends 'home.html' %}
+{% block content %}
+<form class="form-inline custom_form" action="" method="post">
+      {% csrf_token %}
+<!--    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+      <select class="form-control mr-sm-2 dist_select" name="day" id = "myList">
+          <option value="1">Select Date</option>
+             {% for x in DateDay %}
+           <option  value = "{{x.day}}">{{x.date}}</option>
+           {% endfor %}
+         </select>
+    <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+  </form>
+<div class="container-sm" align="center">
+    <form action="" method="post">
+        {% csrf_token %}
+        <button type='Submit' name='status' class="btn btn-primary btn-lg" value="previous">Previous</button>
+        <button type='Submit' name='status'  class="btn btn-primary btn-lg" value="next">Next</button>
+    </form>
+</div>
+<h2 align="center">Day {{day}} {{date}}</h2>
+
+{% for x in data %}
+<!--<div class="container">-->
+{% if x.Sj %}
+<div class="container-sm" align="left">
+        <div class="col-sm-4">
+            <p align="right">{{x.time}}</p>
+            <div class="card bg-light text-dark">
+                <div class="card-body">
+                <div class="card-text">{{x.msg}}</div>
+                    </div>
+
+            </div>
+        </div>
+</div>
+{% else %}
+    <div class="container-sm" align="right">
+        <div class="col-sm-4">
+            <p align="right">{{x.time}}</p>
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <div class="card-text">{{x.msg}}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+<div class="container-sm" align="center">
+    <form action="" method="post">
+        {% csrf_token %}
+        <button type='Submit' name='status' class="btn btn-primary btn-lg" value="previous">Previous</button>
+        <button type='Submit' name='status'  class="btn btn-primary btn-lg" value="next">Next</button>
+    </form>
+</div>
+
+{% endblock %}

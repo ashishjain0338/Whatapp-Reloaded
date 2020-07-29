@@ -1,0 +1,173 @@
+{% extends 'home.html'%}
+{% block content %}
+
+<div class="container-lg" align="left">
+    <div class="row">
+<div class="col-sm-4">
+    <div class="card bg-secondary text-white" >
+        <h5 align="center">{{data.ash.name}}</h5>
+        <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Regular</th>
+        <th>Extras</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Messages</td>
+        <td>{{ data.ash.ind.msg }}</td>
+        <td>{{ data.ash.extra.msg }}</td>
+      </tr>
+      <tr>
+        <td>Words</td>
+        <td>{{ data.ash.ind.word }}</td>
+        <td>{{ data.ash.extra.word }}</td>
+      </tr>
+      <tr>
+        <td>Words per message (wpm)</td>
+        <td>{{ data.ash.ind.wpm }}</td>
+        <td>{{ data.ash.extra.wpm }}</td>
+      </tr>
+      <tr>
+        <td>Characters</td>
+        <td>{{ data.ash.ind.char }}</td>
+        <td>{{ data.ash.extra.char }}</td>
+      </tr>
+    <tr>
+        <td>Character per word (cpw)</td>
+        <td>{{ data.ash.ind.cpw }}</td>
+        <td>{{ data.ash.extra.cpw }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+</div>
+
+<div class="col-sm-4">
+    <div class="card bg-secondary text-white" >
+<!--        <div class="card-body">-->
+<!--            <div class="card-header">Ashish Jain </div>-->
+<!--            <div class="card-text">something</div>-->
+<!--        </div>-->
+        <h5 align="center">{{data.sim.name}}</h5>
+        <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Regular</th>
+        <th>Extras</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Messages</td>
+        <td>{{ data.sim.ind.msg }}</td>
+        <td>{{ data.sim.extra.msg }}</td>
+      </tr>
+      <tr>
+        <td>Words</td>
+        <td>{{ data.sim.ind.word }}</td>
+        <td>{{ data.sim.extra.word }}</td>
+      </tr>
+      <tr>
+        <td>Words per message (wpm)</td>
+        <td>{{ data.sim.ind.wpm }}</td>
+        <td>{{ data.sim.extra.wpm }}</td>
+      </tr>
+      <tr>
+        <td>Characters</td>
+        <td>{{ data.sim.ind.char }}</td>
+        <td>{{ data.sim.extra.char }}</td>
+      </tr>
+    <tr>
+        <td>Character per word (cpw)</td>
+        <td>{{ data.sim.ind.cpw }}</td>
+        <td>{{ data.sim.extra.cpw }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+</div>
+
+        <div class="col-sm-4">
+    <div class="card bg-secondary text-white" >
+        <h5 align="center">Calender</h5>
+        <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Year</th>
+        <th>Day</th>
+          <th>Frequency</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for x in Calender %}
+      <tr>
+        <td>{{x.month}}</td>
+        <td>{{ x.year }}</td>
+        <td>{{ x.day }}</td>
+          <td>{{x.status}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+    </div>
+</div>
+</div>
+</div>
+<div class="container-sm" >
+    <div class="row">
+<div class="col-sm-4">
+    <p align="center">Longest Text</p>
+    {% for x in data.ash.ind.LG %}
+    <p align="right">{{x.date}}  {{x.time}}</p>
+    <div class="card bg-success text-white">
+        <div class="card-body">
+            <div class="card-text">{{x.msg}}</div>
+        </div>
+
+    </div>
+{% endfor %}
+    <p align="center">Longest Extra</p>
+    {% for x in data.ash.extra.LG %}
+    <p align="right">{{x.date}}  {{x.time}}</p>
+    <div class="card bg-success text-white">
+        <div class="card-body">
+            <div class="card-text">{{x.extra}}</div>
+        </div>
+
+    </div>
+{% endfor %}
+</div>
+        <div class="col-sm-4">
+            <p align="center">Longest Text</p>
+    {% for x in data.sim.ind.LG %}
+    <p align="right">{{x.date}}  {{x.time}}</p>
+    <div class="card bg-light text-dark">
+        <div class="card-body">
+            <div class="card-text">{{x.msg}}</div>
+        </div>
+
+    </div>
+{% endfor %}
+    <p align="center">Longest Extra</p>
+    {% for x in data.sim.extra.LG %}
+    <p align="right">{{x.date}}  {{x.time}}</p>
+    <div class="card bg-light text-dark">
+        <div class="card-body">
+            <div class="card-text">{{x.extra}}</div>
+        </div>
+
+        </div>
+                    {% endfor %}
+        </div>
+
+</div>
+
+{% endblock %}

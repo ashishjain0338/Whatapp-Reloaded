@@ -1,0 +1,81 @@
+ body{
+        background-color:#006400;
+        text-align:center;
+        align:center;
+        }
+        .play{
+        position: absolute;
+  left: 7.5%;
+  top: 78%;
+  transform: translate(0%, 0%);
+        }
+        .middle-player{
+        position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(0%, 0%);
+        }
+.right-player{
+        position: absolute;
+  left: 60%;
+  top: 100%;
+  transform: translate(0%, 0%);
+        }
+
+.back-play{
+        position: absolute;
+  transform: translate(25%, 10%);
+        }
+        .back-play1{
+        position: absolute;
+  transform: translate(25%, 30%);
+        }
+        .back-play2{
+        position: absolute;
+  transform: translate(25%, 50%);
+  }
+  .back-play3{
+        position: absolute;
+  transform: translate(25%, 70%);
+  }
+  .back-play4{
+        position: absolute;
+  transform: translate(25%, 90%);
+  }
+  .back-play5{
+        position: absolute;
+  transform: translate(25%, 110%);
+  }
+  .back-play6{
+        position: absolute;
+  transform: translate(25%, 130%);
+        }
+
+.Hback-play{
+        position: absolute;
+  transform: translate(25%, 10%);
+        }
+        .Hback-play1{
+        position: absolute;
+  transform: translate(65%, 10%);
+        }
+        .Hback-play2{
+        position: absolute;
+  transform: translate(105%, 10%);
+  }
+  .Hback-play3{
+        position: absolute;
+  transform: translate(145%, 10%);
+  }
+  .Hback-play4{
+        position: absolute;
+  transform: translate(185%, 10%);
+  }
+  .Hback-play5{
+        position: absolute;
+  transform: translate(225%, 10%);
+  }
+  .Hback-play6{
+        position: absolute;
+  transform: translate(260%, 10%);
+        }

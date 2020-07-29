@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+{% block content %}
+  <form class="form-inline custom_form" action="" method="post">
+      {% csrf_token %}
+<!--    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+      <select class="form-control mr-sm-2 dist_select" name="day" id = "myList">
+          <option value="1">Select Date</option>
+             {% for x in data %}
+           <option  value = "{{x.day}}">{{x.date}}</option>
+           {% endfor %}
+         </select>
+    <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+  </form>
+{% endblock %}

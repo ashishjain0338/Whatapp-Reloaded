@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeingSafe.in</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "{% static 'bootstrap-4.0.0-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet"  href= "{% static 'style.css' %}">
+    <script src="{% static 'jquery-3.4.1.min.js'  %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="{% static 'bootstrap-4.0.0-dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'scripty.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+
+            <style>
+                body {
+  background-color: #f7f9e0 ;
+}
+            </style>
+</head>
+<body bgcolor="#100000">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg mb-4">
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">-->
+    <div class="container">
+  <a class="navbar-brand" href="#" id="yashu">Whatsapp Reloaded</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="/summary/">Summary<span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="/calender/">Calender<span class="sr-only">(current)</span></a>
+
+    </ul>
+      
+  </div>
+    </div>
+</nav>
+<!--</nav>-->
+<!--{% if user.is_authenticated %}-->
+<!--<h6>{{request.user.EmailId}}</h6>-->
+<!--{% endif %}-->
+{% block content %}
+{% endblock %}
+
+
+{% if messages %}
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}><script>alert('{{ message }}')</script></li>
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+.btn btn-outline-primary my-2 my-sm-0{
+margin:2px;
+}
+@media only screen and (max-width: 1000px) {
+
+    body {
+    box-sizing:border-box;
+    }
+    .custom_form {
+        width:100% !important;
+        padding:5px 20px !important;
+        box-sizing:border-box;
+        display:flex !important;
+        flex-direction:row !important;
+    }
+    .container_dis {
+        width:100%;
+        padding:20px;
+        box-sizing:border-box;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .search_button {
+        width:80px !important;
+    }
+    .dist_select {
+        width:100% !important;
+
+    }
+    .dist {
+    margin:20px 0;
+    }
+
+    .h3_mod {
+        margin:20px 0 !important;
+        font-size:1.2rem !important;
+        color:#292b2c !important;
+        font-weight:800 !important;
+        background-color:transparent !important;
+    }
+    .h1_mod {
+        font-size:1.4rem !important;
+        padding:10px 0 !important;
+        font-weight:600 !important;
+    }
+
+    .heading_box {
+        padding:0 !important;
+
+    }
+
+}

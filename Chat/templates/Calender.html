@@ -1,0 +1,35 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="col-sm-12">
+    <div class="card  text-dark" style="background-color:#eee8ec" >
+        <h5 align="center">Calender</h5>
+        <table class="table table-dark  table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Year</th>
+        <th>Day</th>
+          <th>Time Talked</th>
+          <th>Average time per day talked</th>
+          <th>Average time per month</th>
+          <th>Frequency</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for x in Calender %}
+      <tr>
+        <td>{{x.month}}</td>
+        <td>{{ x.year }}</td>
+        <td>{{ x.day }}</td>
+          <td>{{x.time_to_read}}</td>
+          <td>{{x.avg_time}}</td>
+          <td>{{x.avg_time_pm}}</td>
+          <td>{{x.status}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+    </div>
+</div>
+{% endblock %}
