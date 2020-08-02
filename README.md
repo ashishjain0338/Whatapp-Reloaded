@@ -82,4 +82,6 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 		localhost:8080
 	```
 	**OR** Instead you can also type the link that would appear at Command line after typing the command at point 2(Example:-> http://127.0.0.1:8000/)
+	
+	**NOTE** :->The above process would view the Chats only that exist in the Output Folder as JsonFile.json,summary.json,calender.json which was the result of *Backing Up 	Chat*. So make sure that these files do exist in the Output folder with same names.
 
