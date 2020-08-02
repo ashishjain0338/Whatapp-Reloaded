@@ -52,16 +52,34 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 #### Step 2
 1. Download my project from Github in a zip file by clicking at the Code(Green button) at https://github.com/ashishjain0338/Whatapp-Reloaded
 2. Extract the Downloaded file.
-3. Copy the File created in Step 1 in the Extracted folder.
+3. Copy the File created in Step 1 Point 3 in the Extracted folder.
 
 #### Step 3
-1. Open Command Line and move to the directory of Step 2 by using cd command as
+1. Open Command Line and move to the Extracted directory of Step 2 Point 2 by using cd command as
 	```
 		cd PathOfTheExtractedFolder
 	```
-2.Then enter the Command
+2. Then enter the following Command , which would start the Backing up Process
 	``` 
 		python main.py
 	```
+3. When the Command Line asks to Make your selection Enter 1 and hit Enter.
+4. In the next step, Enter the name (with .txt) of the File of Step 1 Point 3.
+	1. If the the above point 4 fails,then you need to Enter the full path of file of Step 1 Point 3.
+5. It it says "Summary File Created" or "Calender File Created",then it means that the backing up of process is completed. You can see the backup Three Files in Output Folder named as JsonFile.json,summary.json,calender.json.
 
+### 2. Viewing the Backup File
+1. Open Command Line and move to the Extracted directory of Step 2 Point 2 by using cd command as
+	```
+		cd PathOfTheExtractedFolder
+	```
+2. Then enter the Command
+	``` 
+		python manage.py runserver
+	```
+3. Then open any browser and type
+	```
+		localhost:8080
+	```
+	**OR** Instead you can also type the link that would appear at Command line after typing the command at point 2(Example:-> http://127.0.0.1:8000/)
 
