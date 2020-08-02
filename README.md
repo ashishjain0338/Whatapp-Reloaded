@@ -42,5 +42,26 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 		```
 	3. Download and installation would start automatically
 	
-## Working
+## How to use
+### 1. Backing up Chat
+#### Step 1
+1. Open the chat you want to backup in Whatsapp at your phone.
+2. Click on the three vertical dots at the right upper, Then click more and then Click on Export Chat (Without Media).
+3. This would create a text file containing all of your messages.
+
+#### Step 2
+1. Download my project from Github in a zip file by clicking at the Code(Green button) at https://github.com/ashishjain0338/Whatapp-Reloaded
+2. Extract the Downloaded file.
+3. Copy the File created in Step 1 in the Extracted folder.
+
+#### Step 3
+1. Open Command Line and move to the directory of Step 2 by using cd command as
+	```
+		cd PathOfTheExtractedFolder
+	```
+2.Then enter the Command
+	``` 
+		python main.py
+	```
+
 
