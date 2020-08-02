@@ -85,3 +85,9 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 	
 	**NOTE** :->The above process would view the Chats only that exist in the Output Folder as JsonFile.json,summary.json,calender.json which was the result of *Backing Up 	Chat*. So make sure that these files do exist in the Output folder with same names.
 
+
+### 3. Merging Two Chats
+Lets say you have taken a backup of your Chat at a particular date using this project and have deleted all the previous messages from the Whatsapp after backup, and after that you continued texting the same person which results in new messsages which are not backed up yet, If you want to backup these new messages,Then this section is for you.
+
+1. First you need to have the JsonFile of both your *Old Chat* and *New Chat* .
+	1. If the Chat/data which is shown as *Viewing the *
