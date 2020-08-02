@@ -19,11 +19,28 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 1. Download the latest python version [Download](https://www.python.org/downloads/)
 2. Install the downloaded file, Make sure to tick the dialogue box when installer provides an option to configure the **PATH** and **PATHEXT** variables 
 3. To Check python has been successfully installed or not. Do the following:-
-	1. Open Command LIne
-	2. Type python  and hit Enter
-	3. The version of python would be shown along with opening of python Terminal starting with ">>>" , if the python is successfully installed
+	1. Open Command Line and type the command. 
+		``` bash
+			python
+		```
+	2. The version of python would be shown along with opening of python Terminal starting with ">>>" , if the python is successfully installed
 4. If Step 3 shows some Error then ,Copy the path of Installed folder (Example:->C:\Program Files\Python 3.8) and paste it in your System Environment Variables.
 
 ### 2. Python Modules
 1. simplejson
+	1. First make sure that Python is installed and your system is connected to internet.
+	2. Open Command line and enter the command
+		```
+			pip3 install simplejson
+		```
+	3. Download and installation would start automatically
+2. django
+	1. First make sure that Python is installed and your system is connected to internet.
+	2. Open Command line and enter the command
+		```
+			pip3 install django
+		```
+	3. Download and installation would start automatically
 	
+## Working
+
