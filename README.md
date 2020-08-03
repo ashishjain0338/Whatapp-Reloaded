@@ -23,7 +23,8 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 		``` bash
 			python
 		```
-	2. The version of python would be shown along with opening of python Terminal starting with ">>>" , if the python is successfully installed
+	2. The version of python would be shown along with opening of python Terminal starting with ">>>" , if the python is successfully installed.
+	![python install](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/Misc/python%20install.PNG)
 4. If Step 3 shows some Error then ,Copy the path of Installed folder (Example:->C:\Program Files\Python 3.8) and paste it in your System Environment Variables.
 
 ### 2. Python Modules
@@ -34,6 +35,7 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 			pip3 install simplejson
 		```
 	3. Download and installation would start automatically
+	![Simple Json](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/Misc/Simplejson.PNG)
 2. django
 	1. First make sure that Python is installed and your system is connected to internet.
 	2. Open Command line and enter the command
@@ -41,6 +43,7 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 			pip3 install django
 		```
 	3. Download and installation would start automatically
+	![Django](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/Misc/django.PNG)
 	
 ## How to use
 ### 1. Backing up Chat
@@ -66,6 +69,7 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 3. When the Command Line asks to "Make your selection" Enter 1 and hit Enter.
 4. In the next step, Enter the name (with .txt) of the File of Step 1 Point 3.
 	1. If the the above point 4 fails,then you need to Enter the full path of file of Step 1 Point 3.
+	![Backing up file](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/Misc/Backing%20up%20file.jpg)
 5. It it says "Summary File Created" or "Calender File Created",then it means that the backing up of process is completed. You can see the backup Three Files in Output Folder named as JsonFile.json , summary.json , calender.json.
 
 ### 2. Viewing the Backup File
@@ -77,6 +81,7 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 	``` 
 		python manage.py runserver
 	```
+	![Running Server](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/Misc/starting%20server.PNG)
 3. Then open any browser and type
 	```
 		localhost:8080
@@ -111,8 +116,9 @@ Lets say you have taken a backup of your Chat at a particular date using this pr
 6. Then enter the Name of the New Chat Json file (which was renamed in step 1)(Example:->NewChat.json)
 
 	If it fails,then you need to enter the Full Path of the New Chat Json File.
+	![Merge Chat](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/Misc/Merge%20Chat.jpg)
 7. Thats it, Both Chats would  be merged as  Three Files in Output Folder named as JsonFile.json , summary.json , calender.json.You can then View the merged chat using the steps of *Viewing the Chat*.
 
 
 
-*This is my first project at Github,I don't know a lot about Contributing but If you Find any error/problem,Let me know ,Thanks for Reaing :)*
+*This is my first project at Github,I don't know a lot about Contributing but If you Find any error/problem,Let me know ,Thanks for Reading :)*
