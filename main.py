@@ -45,7 +45,7 @@ elif(choice == 2):
         print('Invalid File path')
         exit(101)
     json_path = 'Output/JsonFile.json'
-    methods.Combine(old_file_path,latest_path,'Output/JsonFile.json')
+    methods.Combine(old_file_path,latest_file_path,'Output/JsonFile.json')
     print("JSON FILE HAS BEEN CREATED IN OUTPUT FOLDER\n NOW CREATING REST FILES")
     print("Members Constituing the Chat are", methods.GetNames(json_path))
     methods.Summary(json_path, "Output/summary.json")

@@ -89,7 +89,7 @@ def CreateJson(raw_path , json_path):
                         i = i + 1
                         break
                     except:
-                        print("Exception occured")
+                        #print("Exception occured")
                         day = day - 1
                 else:
                     str = str + letters
