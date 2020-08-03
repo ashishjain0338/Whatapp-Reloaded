@@ -16,7 +16,6 @@ The end Result/View would look like the following
 
 
 <!--3. In Summary, you can see some statistics like Total Messages,Longest Text etc.-->
-	<!--[summary-view](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/View/Summary.jpg)-->
 
 ## Requirements
 
