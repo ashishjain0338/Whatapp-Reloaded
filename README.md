@@ -63,10 +63,10 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 	``` 
 		python main.py
 	```
-3. When the Command Line asks to Make your selection Enter 1 and hit Enter.
+3. When the Command Line asks to "Make your selection" Enter 1 and hit Enter.
 4. In the next step, Enter the name (with .txt) of the File of Step 1 Point 3.
 	1. If the the above point 4 fails,then you need to Enter the full path of file of Step 1 Point 3.
-5. It it says "Summary File Created" or "Calender File Created",then it means that the backing up of process is completed. You can see the backup Three Files in Output Folder named as JsonFile.json,summary.json,calender.json.
+5. It it says "Summary File Created" or "Calender File Created",then it means that the backing up of process is completed. You can see the backup Three Files in Output Folder named as JsonFile.json , summary.json , calender.json.
 
 ### 2. Viewing the Backup File
 1. Open Command Line and move to the Extracted directory of Step 2 Point 2 by using cd command as
@@ -90,4 +90,29 @@ Whatsapp-Reloaded is a Project to backup and merge Chats along with some additio
 Lets say you have taken a backup of your Chat at a particular date using this project and have deleted all the previous messages from the Whatsapp after backup, and after that you continued texting the same person which results in new messsages which are not backed up yet, If you want to backup these new messages,Then this section is for you.
 
 1. First you need to have the JsonFile of both your *Old Chat* and *New Chat* .
-	1. If the Chat/data which is shown as *Viewing the *
+	1. If the Chat/data which is shown as *Viewing the Chat* is same as that of *Old Chat*,Then you just need to rename the JsonFile.json in the Output Folder .
+		
+		If step 1 is not valid,Then you need to create the Backup file by following *Backing Up Chat* Section and then to rename the JsonFile.json in the Output Folder.
+	2. For JsonFile of *New Chat* ,you need to create the Backup file by following *Backing Up Chat* Section on your *New Chat Text File* and then to rename the 				JsonFile.json in the Output Folder.
+	
+	Once you have both JsonFile of Old as well as New Chat ,You can move on to merging them.
+2. Open Command Line and move to the Extracted directory by using cd command as
+	```
+		cd PathOfTheExtractedFolder
+	```
+3. Then enter the following Command , which would start the Merging up Process
+	``` 
+		python main.py
+	```
+4. When the Command Line asks to "Make your selection" Enter 2 and hit Enter.
+5. Then enter the Name of the Old Chat Json file (which was renamed in step 1)(Example:->OldChat.json)
+
+	If it fails,then you need to enter the Full Path of the Old Chat Json File.
+6. Then enter the Name of the New Chat Json file (which was renamed in step 1)(Example:->NewChat.json)
+
+	If it fails,then you need to enter the Full Path of the New Chat Json File.
+7. Thats it, Both Chats would  be merged as  Three Files in Output Folder named as JsonFile.json , summary.json , calender.json.You can then View the merged chat using the steps of *Viewing the Chat*.
+
+
+
+*This is my first project at Github,I don't know a lot about Contributing but If you Find any error/problem,Let me know ,Thanks for Reaing :)*
