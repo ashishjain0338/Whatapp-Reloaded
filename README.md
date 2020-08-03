@@ -5,6 +5,19 @@ Do you want to see the amount of time you have spent talking to that person.
 
 Whatsapp-Reloaded is a Project to backup and merge Chats along with some additional features like Summary ,Statistics ,Calendar specific to the Chat
 
+The end Result/View would look like the following
+
+1. Here you can view each chat Day wise.
+	![day-view](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/View/Day.PNG)
+
+
+2. In Calender, you can see the amount of time talked each day.
+	![calender-view](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/View/Calender.PNG)
+
+
+3. In Summary, you can see some statistics like Total Messages,Longest Text etc.
+	![summary-view](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/View/Summary.jpg)
+
 ## Requirements
 
 	1. Python 3.7.3 or above
