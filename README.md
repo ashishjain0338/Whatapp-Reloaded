@@ -15,8 +15,8 @@ The end Result/View would look like the following
 	![calender-view](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/View/Calender.PNG)
 
 
-3. In Summary, you can see some statistics like Total Messages,Longest Text etc.
-	![summary-view](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/View/Summary.jpg)
+<!--3. In Summary, you can see some statistics like Total Messages,Longest Text etc.-->
+	<!--[summary-view](https://github.com/ashishjain0338/Whatapp-Reloaded/blob/master/ScreenShots/View/Summary.jpg)-->
 
 ## Requirements
 
